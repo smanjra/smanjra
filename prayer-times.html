@@ -164,7 +164,7 @@
             try {
                 // This URL points to the raw JSON file in your GitHub repo
                 // Replace 'YOUR_USERNAME' and 'REPO_NAME' with your actual details
-                const response = await fetch('https://raw.githubusercontent.com/smanjra/prayer-dashboard/main/prayer_times.json');
+                const response = await fetch('https://raw.githubusercontent.com/smanjra/smanjra/main/prayer_times.json');
                 prayerData = await response.json();
                 render(); // Render the dashboard after data loads
             } catch (error) {
