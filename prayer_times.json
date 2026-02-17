@@ -1,1 +1,438 @@
-[]
+[
+  {
+    "name": "Khadijatul Kubra Mosque",
+    "time": "15:30"
+  },
+  {
+    "name": "Masjid Salahuddin",
+    "time": "15:30"
+  },
+  {
+    "name": "Masjid Abdullah ibn Mas'ood",
+    "time": "15:40"
+  },
+  {
+    "name": "Tajdaar-E-Madina",
+    "time": "15:45"
+  },
+  {
+    "name": "As-Salaam (The Peace Centre)",
+    "time": "15:45"
+  },
+  {
+    "name": "Beaumont Leys Muslims",
+    "time": "15:45"
+  },
+  {
+    "name": "Masjidul Islah",
+    "time": "15:45"
+  },
+  {
+    "name": "Masjid Aisha",
+    "time": "15:50"
+  },
+  {
+    "name": "Al Ma\u2019rifah Academy",
+    "time": "15:50"
+  },
+  {
+    "name": "Raza Centre",
+    "time": "15:50"
+  },
+  {
+    "name": "Jamia Sufiya",
+    "time": "16:00"
+  },
+  {
+    "name": "Darul Arqam Education Centre",
+    "time": "16:00"
+  },
+  {
+    "name": "Faiz-E-Raza Academy",
+    "time": "16:00"
+  },
+  {
+    "name": "Darul Ihsaan (The Mayflower)",
+    "time": "16:00"
+  },
+  {
+    "name": "Faizan-E-Madina",
+    "time": "16:00"
+  },
+  {
+    "name": "Baytul Ihsaan (Darul Fath)",
+    "time": "16:00"
+  },
+  {
+    "name": "Mostyn Street Musalla",
+    "time": "16:00"
+  },
+  {
+    "name": "Masjid Abu Hurairah",
+    "time": "16:00"
+  },
+  {
+    "name": "Masjid Ali",
+    "time": "16:15"
+  },
+  {
+    "name": "Jame Masjid",
+    "time": "16:15"
+  },
+  {
+    "name": "Madani Education Centre",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Al Furqan",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Al-Falah",
+    "time": "16:15"
+  },
+  {
+    "name": "Islamic Da'wah Academy (IDA)",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Al-Khaleel (MIQ)",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid An Noor (Highfields)",
+    "time": "16:15"
+  },
+  {
+    "name": "Sayyidah Zahra Centre",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Ar-Rahmaan",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid-al-Ameen Oadby",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Ul Imam il Bukhari",
+    "time": "16:15"
+  },
+  {
+    "name": "Central Mosque",
+    "time": "16:15"
+  },
+  {
+    "name": "Leicester Mosque (Sutherland St)",
+    "time": "16:15"
+  },
+  {
+    "name": "Madani School Masjid",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Usman (Markaz)",
+    "time": "16:15"
+  },
+  {
+    "name": "Usmani Mosque",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Abu Bakr",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Bilal",
+    "time": "16:15"
+  },
+  {
+    "name": "Coleman Lodge Prayer Room",
+    "time": "16:15"
+  },
+  {
+    "name": "Darus-Salam Masjid",
+    "time": "16:15"
+  },
+  {
+    "name": "Madrasah Ta'leemul Qur'an (Knighton CEC)",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Mu'adh ibn Jabal",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Umar",
+    "time": "16:15"
+  },
+  {
+    "name": "The Hamilton Hub (Darul Fath)",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Muhammad",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Adam (Oadby Community Hub)",
+    "time": "16:15"
+  },
+  {
+    "name": "Madrasah Baytul 'ilm (Masjid Ibraheem)",
+    "time": "16:20"
+  },
+  {
+    "name": "Madrasah Hamidiya (HCO)",
+    "time": "16:20"
+  },
+  {
+    "name": "Masjid Fatima Zahra R.A",
+    "time": "16:20"
+  },
+  {
+    "name": "Majlis e Dawatul Haq",
+    "time": "16:30"
+  },
+  {
+    "name": "Masjid Noor-ul-Islam",
+    "time": "16:30"
+  },
+  {
+    "name": "Gulzar-E-Madina",
+    "time": "16:30"
+  },
+  {
+    "name": "Northfields Education Centre",
+    "time": "16:30"
+  },
+  {
+    "name": "Al Ehsaan Academy",
+    "time": "16:45"
+  },
+  {
+    "name": "Markaz Attawheed",
+    "time": "14:49"
+  },
+  {
+    "name": "Masjid Aisha",
+    "time": "14:49"
+  },
+  {
+    "name": "Masjid At-Taqwa",
+    "time": "14:49"
+  },
+  {
+    "name": "Khadijatul Kubra Mosque",
+    "time": "15:30"
+  },
+  {
+    "name": "Masjid Salahuddin",
+    "time": "15:30"
+  },
+  {
+    "name": "Masjid Abdullah ibn Mas'ood",
+    "time": "15:40"
+  },
+  {
+    "name": "Tajdaar-E-Madina",
+    "time": "15:45"
+  },
+  {
+    "name": "As-Salaam (The Peace Centre)",
+    "time": "15:45"
+  },
+  {
+    "name": "Beaumont Leys Muslims",
+    "time": "15:45"
+  },
+  {
+    "name": "Masjidul Islah",
+    "time": "15:45"
+  },
+  {
+    "name": "Masjid Aisha",
+    "time": "15:50"
+  },
+  {
+    "name": "Al Ma\u2019rifah Academy",
+    "time": "15:50"
+  },
+  {
+    "name": "Raza Centre",
+    "time": "15:50"
+  },
+  {
+    "name": "Jamia Sufiya",
+    "time": "16:00"
+  },
+  {
+    "name": "Darul Arqam Education Centre",
+    "time": "16:00"
+  },
+  {
+    "name": "Faiz-E-Raza Academy",
+    "time": "16:00"
+  },
+  {
+    "name": "Darul Ihsaan (The Mayflower)",
+    "time": "16:00"
+  },
+  {
+    "name": "Faizan-E-Madina",
+    "time": "16:00"
+  },
+  {
+    "name": "Baytul Ihsaan (Darul Fath)",
+    "time": "16:00"
+  },
+  {
+    "name": "Mostyn Street Musalla",
+    "time": "16:00"
+  },
+  {
+    "name": "Masjid Abu Hurairah",
+    "time": "16:00"
+  },
+  {
+    "name": "Masjid Ali",
+    "time": "16:15"
+  },
+  {
+    "name": "Jame Masjid",
+    "time": "16:15"
+  },
+  {
+    "name": "Madani Education Centre",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Al Furqan",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Al-Falah",
+    "time": "16:15"
+  },
+  {
+    "name": "Islamic Da'wah Academy (IDA)",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Al-Khaleel (MIQ)",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid An Noor (Highfields)",
+    "time": "16:15"
+  },
+  {
+    "name": "Sayyidah Zahra Centre",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Ar-Rahmaan",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid-al-Ameen Oadby",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Ul Imam il Bukhari",
+    "time": "16:15"
+  },
+  {
+    "name": "Central Mosque",
+    "time": "16:15"
+  },
+  {
+    "name": "Leicester Mosque (Sutherland St)",
+    "time": "16:15"
+  },
+  {
+    "name": "Madani School Masjid",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Usman (Markaz)",
+    "time": "16:15"
+  },
+  {
+    "name": "Usmani Mosque",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Abu Bakr",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Bilal",
+    "time": "16:15"
+  },
+  {
+    "name": "Coleman Lodge Prayer Room",
+    "time": "16:15"
+  },
+  {
+    "name": "Darus-Salam Masjid",
+    "time": "16:15"
+  },
+  {
+    "name": "Madrasah Ta'leemul Qur'an (Knighton CEC)",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Mu'adh ibn Jabal",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Umar",
+    "time": "16:15"
+  },
+  {
+    "name": "The Hamilton Hub (Darul Fath)",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Muhammad",
+    "time": "16:15"
+  },
+  {
+    "name": "Masjid Adam (Oadby Community Hub)",
+    "time": "16:15"
+  },
+  {
+    "name": "Madrasah Baytul 'ilm (Masjid Ibraheem)",
+    "time": "16:20"
+  },
+  {
+    "name": "Madrasah Hamidiya (HCO)",
+    "time": "16:20"
+  },
+  {
+    "name": "Masjid Fatima Zahra R.A",
+    "time": "16:20"
+  },
+  {
+    "name": "Majlis e Dawatul Haq",
+    "time": "16:30"
+  },
+  {
+    "name": "Masjid Noor-ul-Islam",
+    "time": "16:30"
+  },
+  {
+    "name": "Gulzar-E-Madina",
+    "time": "16:30"
+  },
+  {
+    "name": "Northfields Education Centre",
+    "time": "16:30"
+  },
+  {
+    "name": "Al Ehsaan Academy",
+    "time": "16:45"
+  }
+]
