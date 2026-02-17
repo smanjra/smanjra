@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-# We use the "TodaysTimes" page which lists the full grid
 url = "https://www.salaahtimes.co.uk/Timetable/TodaysTimes"
 headers = {'User-Agent': 'Mozilla/5.0'}
 
@@ -12,36 +11,36 @@ try:
     soup = BeautifulSoup(response.text, 'html.parser')
     
     data = []
-    
-    # The table usually has rows with: Name | Fajr | Zohar | Asr | Maghrib | Eisha
     rows = soup.select('tr') 
+    
+    # Keywords to ignore to ensure we only get Jamaat times
+    ignore_keywords = ["beginning", "sunrise", "start", "sehri", "sunset"]
     
     for row in rows:
         cols = row.find_all('td')
-        # We need rows with enough columns (Masjid Name + 5 prayers)
         if len(cols) >= 6:
             name = cols[0].get_text(strip=True)
-            fajr = cols[1].get_text(strip=True)
-            zohar = cols[2].get_text(strip=True)
-            asr = cols[3].get_text(strip=True)
-            maghrib = cols[4].get_text(strip=True)
-            eisha = cols[5].get_text(strip=True)
             
-            # Basic validation: ensure the "time" looks like a time (contains :)
-            if ":" in fajr:
+            # Skip rows that are clearly not mosque Jamaat times
+            if any(key in name.lower() for key in ignore_keywords):
+                continue
+
+            times = [c.get_text(strip=True) for c in cols[1:6]]
+            
+            # Ensure the row actually contains valid looking times
+            if all(":" in t for t in times):
                 data.append({
                     "name": name,
-                    "fajr": fajr,
-                    "zohar": zohar,
-                    "asr": asr,
-                    "maghrib": maghrib,
-                    "eisha": eisha
+                    "fajr": times[0],
+                    "zohar": times[1],
+                    "asr": times[2],
+                    "maghrib": times[3],
+                    "eisha": times[4]
                 })
 
     with open('prayer_times.json', 'w') as f:
         json.dump(data, f, indent=2)
-        
-    print(f"Successfully scraped {len(data)} mosques.")
+    print(f"Scraped {len(data)} mosques.")
 
 except Exception as e:
     print(f"Error: {e}")
