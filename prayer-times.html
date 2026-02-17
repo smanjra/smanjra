@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leicester Prayer Times Dashboard</title>
+    <style>
+        :root {
+            --primary: #10b981; /* Emerald Green */
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-sub: #64748b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .subtitle {
+            color: var(--text-sub);
+            font-size: 1.1rem;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            font-size: 16px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-box:focus {
+            border-color: var(--primary);
+        }
+
+        /* Time Group Styles */
+        .time-group {
+            margin-bottom: 30px;
+        }
+
+        .time-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .time-badge {
+            background-color: var(--primary);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-right: 12px;
+        }
+
+        .time-line {
+            flex-grow: 1;
+            height: 1px;
+            background-color: #e2e8f0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .mosque-name {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .prayer-time {
+            font-family: monospace;
+            font-size: 1.1rem;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .empty-state {
+            text-align: center;
+            color: var(--text-sub);
+            padding: 40px;
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--text-sub);
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Next Salaah: Fajr</h1>
+            <p class="subtitle">Live Dashboard for Leicester Mosques</p>
+        </header>
+
+        <input type="text" id="searchInput" class="search-box" placeholder="Search for your local mosque...">
+
+        <div id="dashboard">
+            </div>
+
+        <div id="emptyState" class="empty-state">
+            No mosques found matching your search.
+        </div>
+
+        <footer>
+            Data snapshot extracted from SalaahTimes.co.uk
+        </footer>
+    </div>
+
+    <script>
+        // DATA EXTRACTED FROM YOUR LINK
+        let prayerData = [];
+
+        async function loadData() {
+            try {
+                // This URL points to the raw JSON file in your GitHub repo
+                // Replace 'YOUR_USERNAME' and 'REPO_NAME' with your actual details
+                const response = await fetch('https://raw.githubusercontent.com/smanjra/prayer-dashboard/main/prayer_times.json');
+                prayerData = await response.json();
+                render(); // Render the dashboard after data loads
+            } catch (error) {
+                console.error("Could not load prayer times:", error);
+                document.getElementById('dashboard').innerHTML = '<p style="text-align:center">Error loading data.</p>';
+            }
+        }
+
+        // Initialize
+        loadData();
+
+        // LOGIC TO RENDER DASHBOARD
+        const dashboard = document.getElementById('dashboard');
+        const searchInput = document.getElementById('searchInput');
+        const emptyState = document.getElementById('emptyState');
+
+        function render(filterText = '') {
+            dashboard.innerHTML = '';
+            
+            // Filter data
+            const filtered = prayerData.filter(m => 
+                m.name.toLowerCase().includes(filterText.toLowerCase())
+            );
+
+            if (filtered.length === 0) {
+                emptyState.style.display = 'block';
+                return;
+            } else {
+                emptyState.style.display = 'none';
+            }
+
+            // Group by Time
+            const grouped = {};
+            filtered.forEach(item => {
+                if (!grouped[item.time]) grouped[item.time] = [];
+                grouped[item.time].push(item);
+            });
+
+            // Sort times
+            const sortedTimes = Object.keys(grouped).sort();
+
+            // Render Groups
+            sortedTimes.forEach(time => {
+                const groupDiv = document.createElement('div');
+                groupDiv.className = 'time-group';
+
+                const header = `
+                    <div class="time-header">
+                        <span class="time-badge">${time}</span>
+                        <div class="time-line"></div>
+                    </div>
+                `;
+
+                const cards = grouped[time].map(mosque => `
+                    <div class="card">
+                        <span class="mosque-name">${mosque.name}</span>
+                        <span class="prayer-time">${mosque.time}</span>
+                    </div>
+                `).join('');
+
+                groupDiv.innerHTML = header + `<div class="grid">${cards}</div>`;
+                dashboard.appendChild(groupDiv);
+            });
+        }
+
+        // Initialize
+        render();
+
+        // Search Listener
+        searchInput.addEventListener('input', (e) => {
+            render(e.target.value);
+        });
+    </script>
+</body>
+</html>
