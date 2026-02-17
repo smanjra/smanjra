@@ -31,14 +31,13 @@
             background: var(--card-bg);
             padding: 15px;
             border-radius: 16px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
             margin-bottom: 20px;
             text-align: center;
             position: sticky;
-            top: 10px; /* Slight gap from very top */
-            z-index: 1000; /* Highest priority */
+            top: 5px; /* Added gap from top */
+            z-index: 2000; /* Ensure it is above EVERYTHING */
         }
-
         .prayer-nav {
             display: flex;
             align-items: center;
@@ -69,10 +68,12 @@
         .time-group { margin-bottom: 25px; }
         
         .time-header {
-            display: flex; align-items: center; margin-bottom: 10px;
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 10px;
             position: sticky; 
-            top: 115px; /* header-height + container gap */
-            z-index: 900; 
+            top: 110px; /* This needs to be exactly the height of your header */
+            z-index: 1000; 
         }
         
         .time-badge {
@@ -82,6 +83,12 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
 
+        #tableView td {
+            background: white !important; /* Forces removal of any highlights */
+            color: var(--text-main) !important;
+            font-weight: normal !important;
+        }
+        
         .card {
             background: var(--card-bg);
             padding: 14px 16px;
