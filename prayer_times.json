@@ -496,14 +496,6 @@
     "eisha": "19:25"
   },
   {
-    "name": "New Parks Academy Musalla",
-    "fajr": "06:40",
-    "zohar": "",
-    "asr": "",
-    "maghrib": "17:24",
-    "eisha": "19:25"
-  },
-  {
     "name": "Northfields Education Centre",
     "fajr": "06:30",
     "zohar": "13:00",
@@ -552,91 +544,11 @@
     "eisha": "20:00"
   },
   {
-    "name": "Central Mosque",
-    "fajr": "05:45",
-    "zohar": "07:13",
-    "asr": "12:21",
-    "maghrib": "",
-    "eisha": "15:33"
-  },
-  {
-    "name": "Islamic Da'wah Academy (IDA)",
-    "fajr": "05:22",
-    "zohar": "07:17",
-    "asr": "12:24",
-    "maghrib": "",
-    "eisha": "15:30"
-  },
-  {
-    "name": "Jame Masjid",
-    "fajr": "05:22",
-    "zohar": "07:17",
-    "asr": "12:24",
-    "maghrib": "",
-    "eisha": "15:30"
-  },
-  {
-    "name": "Leicester Mosque (Sutherland St)",
-    "fajr": "05:45",
-    "zohar": "07:13",
-    "asr": "12:21",
-    "maghrib": "",
-    "eisha": "15:33"
-  },
-  {
-    "name": "Markaz Attawheed",
-    "fajr": "05:40",
-    "zohar": "07:18",
-    "asr": "12:23",
-    "maghrib": "14:49",
-    "eisha": ""
-  },
-  {
     "name": "Masjid Aisha",
     "fajr": "05:22",
     "zohar": "07:17",
     "asr": "12:24",
     "maghrib": "14:49",
-    "eisha": "15:30"
-  },
-  {
-    "name": "Masjid Al-Falah",
-    "fajr": "05:37",
-    "zohar": "07:17",
-    "asr": "12:24",
-    "maghrib": "",
-    "eisha": "15:30"
-  },
-  {
-    "name": "Masjid Ali",
-    "fajr": "05:23",
-    "zohar": "07:17",
-    "asr": "12:23",
-    "maghrib": "",
-    "eisha": "15:29"
-  },
-  {
-    "name": "Masjid An Noor (Highfields)",
-    "fajr": "05:22",
-    "zohar": "07:17",
-    "asr": "12:24",
-    "maghrib": "",
-    "eisha": "15:30"
-  },
-  {
-    "name": "Masjid At-Taqwa",
-    "fajr": "05:40",
-    "zohar": "07:18",
-    "asr": "12:23",
-    "maghrib": "14:49",
-    "eisha": ""
-  },
-  {
-    "name": "Masjid Umar",
-    "fajr": "05:22",
-    "zohar": "07:17",
-    "asr": "12:24",
-    "maghrib": "",
     "eisha": "15:30"
   }
 ]
