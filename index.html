@@ -19,11 +19,61 @@
 
         /* FIXED HEADER */
         header {
-            background: var(--card-bg); padding: 15px; border-radius: 16px;
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 20px;
             box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-            text-align: center; position: sticky; top: 10px; z-index: 3000; margin-bottom: 20px;
+            position: sticky;
+            top: 10px;
+            z-index: 3000;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .prayer-nav { display: flex; align-items: center; justify-content: space-between; }
+        .prayer-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 12px;
+        }
+
+        .clock-status-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #f1f5f9; /* Light grey background to separate from white header */
+            padding: 6px 16px;
+            border-radius: 50px;
+            border: 1px solid #e2e8f0;
+        }
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--danger);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(239, 68, 68, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+        .clock-label {
+            font-size: 0.7rem;
+            font-weight: 800;
+            color: var(--text-sub);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        #statusTime {
+            font-family: 'Courier New', Courier, monospace; /* Monospace stops numbers jumping */
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--text-main);
+        }
+        
         .nav-btn { background: #f1f5f9; border: none; font-size: 1.2rem; cursor: pointer; padding: 10px 18px; border-radius: 12px; }
         .current-prayer-title { font-size: 1.5rem; font-weight: 900; color: var(--primary); text-transform: uppercase; }
         .sub-info { font-family: monospace; font-size: 1rem; color: var(--text-sub); font-weight: bold; margin-top: 4px; }
@@ -74,10 +124,15 @@
     <header>
         <div class="prayer-nav">
             <button class="nav-btn" onclick="changePrayer(-1)">&#10094;</button>
-            <div id="prayerTitle" class="current-prayer-title">LOADING...</div>
+            <div id="prayerTitle" class="current-prayer-title">DHUHR</div>
             <button class="nav-btn" onclick="changePrayer(1)">&#10095;</button>
         </div>
-        <div id="statusTime" class="sub-info">00:00:00</div>
+        
+        <div class="clock-status-bar">
+            <div class="live-dot"></div>
+            <span class="clock-label">Time Now:</span>
+            <div id="statusTime">00:00:00</div>
+        </div>
     </header>
 
     <div id="listView"></div>
