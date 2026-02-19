@@ -68,10 +68,12 @@
             letter-spacing: 0.05em;
         }
         #statusTime {
-            font-family: 'Courier New', Courier, monospace; /* Monospace stops numbers jumping */
+            font-family: 'Courier New', Courier, monospace;
             font-size: 1.1rem;
             font-weight: 800;
             color: var(--text-main);
+            min-width: 110px; /* Prevents the 'Time Now' bubble from resizing */
+            text-align: center;
         }
         
         .nav-btn { background: #f1f5f9; border: none; font-size: 1.2rem; cursor: pointer; padding: 10px 18px; border-radius: 12px; }
@@ -166,16 +168,31 @@
         setInterval(tick, 1000);
     }
 
+    function to12h(timeStr) {
+        if (!timeStr || !timeStr.includes(':')) return timeStr;
+        let [h, m] = timeStr.split(':').map(Number);
+        const suffix = h >= 12 ? 'PM' : 'AM';
+        h = h % 12 || 12; // Converts 0 to 12 and 13 to 1
+        return `${h}:${m.toString().padStart(2, '0')} ${suffix}`;
+    }
+
     function tick() {
-        document.getElementById('statusTime').innerText = new Date().toLocaleTimeString('en-GB');
+        const now = new Date();
+        // 'en-US' or 'en-GB' with hour12: true gives us the AM/PM format
+        document.getElementById('statusTime').innerText = now.toLocaleTimeString('en-GB', { 
+            hour: 'numeric', 
+            minute: '2-digit', 
+            second: '2-digit', 
+            hour12: true 
+        }).toUpperCase();
+    
         const oldAuto = autoDetectedIndex;
         updateAutoDetect();
         if(oldAuto !== autoDetectedIndex) {
-            currentPrayerIndex = autoDetectedIndex; // Auto-switch tab if 20 mins passed
+            currentPrayerIndex = autoDetectedIndex;
             render();
         } else {
-            // Re-render list every minute to update red/strikethrough/hiding
-            if(new Date().getSeconds() === 0) render();
+            if(now.getSeconds() === 0) render();
         }
     }
 
@@ -268,7 +285,7 @@
         Object.keys(groups).forEach(time => {
             const section = document.createElement('div');
             section.className = 'time-group';
-            section.innerHTML = `<div class="time-header"><span class="time-badge">${time}</span></div>`;
+            section.innerHTML = `<div class="time-header"><span class="time-badge">${to12h(time)}</span></div>`;
             
             groups[time].forEach(m => {
                 const card = document.createElement('div');
@@ -278,7 +295,7 @@
                 card.className = `card ${isPassed ? 'passed' : ''}`;
                 card.innerHTML = `
                     <span class="mosque-name">${m.name}</span>
-                    <span class="mosque-time">${m.timeStr}</span>
+                    <span class="mosque-time">${to12h(m.timeStr)}</span>
                 `;
                 section.appendChild(card);
             });
@@ -294,7 +311,14 @@
         tbody.innerHTML = '';
         allData.forEach(m => {
             const tr = document.createElement('tr');
-            tr.innerHTML = `<td><b>${m.name}</b></td><td>${m.fajr}</td><td>${m.zohar}</td><td>${m.asr}</td><td>${m.maghrib}</td><td>${m.eisha}</td>`;
+            tr.innerHTML = `
+                <td><b>${m.name}</b></td>
+                <td>${to12h(m.fajr)}</td>
+                <td>${to12h(m.zohar)}</td>
+                <td>${to12h(m.asr)}</td>
+                <td>${to12h(m.maghrib)}</td>
+                <td>${to12h(m.eisha)}</td>
+            `;
             tbody.appendChild(tr);
         });
     }
