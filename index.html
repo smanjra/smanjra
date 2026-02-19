@@ -134,6 +134,9 @@
             border-radius: 40px; font-weight: bold; cursor: pointer; border: none;
             box-shadow: 0 10px 20px rgba(0,0,0,0.2); z-index: 4000;
         }
+        #tableView td {
+            white-space: nowrap; /* Keeps times on one line in the table too */
+        }
     </style>
 </head>
 <body>
@@ -195,13 +198,16 @@
 
     function tick() {
         const now = new Date();
-        // 'en-US' or 'en-GB' with hour12: true gives us the AM/PM format
-        document.getElementById('statusTime').innerText = now.toLocaleTimeString('en-GB', { 
-            hour: 'numeric', 
-            minute: '2-digit', 
-            second: '2-digit', 
-            hour12: true 
-        }).toUpperCase();
+        let h = now.getHours();
+        let m = now.getMinutes();
+        let s = now.getSeconds();
+        
+        const suffix = h >= 12 ? 'PM' : 'AM';
+        h = h % 12 || 12;
+        
+        const timeDisplay = `${h}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}<span class="time-suffix">${suffix}</span>`;
+        
+        document.getElementById('statusTime').innerHTML = timeDisplay;
     
         const oldAuto = autoDetectedIndex;
         updateAutoDetect();
