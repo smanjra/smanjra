@@ -169,35 +169,41 @@
         container.innerHTML = '';
 
         const nowMins = new Date().getHours() * 60 + new Date().getMinutes();
-        
-        // Prepare data
-        const list = allData.map(m => ({
+        const isCurrentTab = currentPrayerIndex === autoDetectedIndex;
+
+        // Prepare the full list for this prayer
+        const fullList = allData.map(m => ({
             name: m.name, timeStr: m[pName], mins: getMins(m[pName])
         })).sort((a,b) => a.mins - b.mins);
 
-        const pastList = list.filter(m => m.mins < (nowMins - 20));
-        const activeList = list.filter(m => m.mins >= (nowMins - 20));
+        if (isCurrentTab) {
+            // CURRENT PRAYER LOGIC: Hide stuff older than 20 mins
+            const pastList = fullList.filter(m => m.mins < (nowMins - 20));
+            const activeList = fullList.filter(m => m.mins >= (nowMins - 20));
 
-        // Expand Button for Past Jamaats
-        if (pastList.length > 0) {
-            const btn = document.createElement('button');
-            btn.className = 'expand-btn';
-            btn.innerText = showPast ? `↑ Hide ${pastList.length} passed jamaats` : `↓ Show ${pastList.length} passed jamaats`;
-            btn.onclick = () => { showPast = !showPast; render(); };
-            container.appendChild(btn);
+            if (pastList.length > 0) {
+                const btn = document.createElement('button');
+                btn.className = 'expand-btn';
+                btn.innerText = showPast ? `↑ Hide ${pastList.length} passed jamaats` : `↓ Show ${pastList.length} passed jamaats`;
+                btn.onclick = () => { showPast = !showPast; render(); };
+                container.appendChild(btn);
 
-            if (showPast) {
-                renderGrouped(pastList, container, nowMins);
-                const hr = document.createElement('hr');
-                hr.style.cssText = "border: none; border-top: 1px solid #e2e8f0; margin: 20px 0;";
-                container.appendChild(hr);
+                if (showPast) {
+                    renderGrouped(pastList, container, nowMins, true);
+                    const hr = document.createElement('hr');
+                    hr.style.cssText = "border: none; border-top: 1px solid #e2e8f0; margin: 20px 0;";
+                    container.appendChild(hr);
+                }
             }
+            // Show the active (or recently passed) ones
+            renderGrouped(activeList, container, nowMins, true);
+        } else {
+            // PREVIOUS/FUTURE PRAYER LOGIC: Show everything, no buttons, no red
+            renderGrouped(fullList, container, nowMins, false);
         }
-
-        renderGrouped(activeList, container, nowMins);
     }
 
-    function renderGrouped(dataList, container, nowMins) {
+    function renderGrouped(dataList, container, nowMins, applyStatus) {
         const groups = {};
         dataList.forEach(i => {
             if(!groups[i.timeStr]) groups[i.timeStr] = [];
@@ -211,12 +217,14 @@
             
             groups[time].forEach(m => {
                 const card = document.createElement('div');
-                // Only strike through if we are on the AUTO DETECTED prayer tab
-                const isCurrentTab = currentPrayerIndex === autoDetectedIndex;
-                const isDone = m.mins < nowMins;
+                // Red/Strikethrough ONLY if applyStatus is true AND the time is in the past
+                const isPassed = applyStatus && (m.mins < nowMins);
                 
-                card.className = `card ${ (isCurrentTab && isDone) ? 'passed' : '' }`;
-                card.innerHTML = `<span class="mosque-name">${m.name}</span><span class="mosque-time">${m.timeStr}</span>`;
+                card.className = `card ${isPassed ? 'passed' : ''}`;
+                card.innerHTML = `
+                    <span class="mosque-name">${m.name}</span>
+                    <span class="mosque-time">${m.timeStr}</span>
+                `;
                 section.appendChild(card);
             });
             container.appendChild(section);
