@@ -82,6 +82,9 @@
             text-transform: uppercase;
             margin-left: 2px;
         }
+        .time-badge .time-suffix {
+            color: rgba(255, 255, 255, 0.7); /* Soft white/transparent so it doesn't clash */
+        }
         
         #statusTime {
             font-family: 'Courier New', Courier, monospace;
@@ -308,7 +311,7 @@
         Object.keys(groups).forEach(time => {
             const section = document.createElement('div');
             section.className = 'time-group';
-            section.innerHTML = `<div class="time-header"><span class="time-badge" style="text-color: #ffffff !important;">${to12h(time)}</span></div>`;
+            section.innerHTML = `<div class="time-header"><span class="time-badge">${to12h(time)}</span></div>`;
             
             groups[time].forEach(m => {
                 const card = document.createElement('div');
