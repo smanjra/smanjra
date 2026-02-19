@@ -40,6 +40,8 @@
         }
 
         .clock-status-bar {
+            min-width: 160px; /* Gives it a consistent width */
+            justify-content: center;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -67,6 +69,20 @@
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
+        .mosque-time, .time-badge, #statusTime {
+            white-space: nowrap; 
+            display: inline-flex;
+            align-items: baseline;
+            gap: 4px;
+        }
+        .time-suffix {
+            font-size: 0.65em; /* Makes it smaller than the numbers */
+            font-weight: 600;
+            color: var(--text-sub);
+            text-transform: uppercase;
+            margin-left: 2px;
+        }
+        
         #statusTime {
             font-family: 'Courier New', Courier, monospace;
             font-size: 1.1rem;
@@ -172,8 +188,9 @@
         if (!timeStr || !timeStr.includes(':')) return timeStr;
         let [h, m] = timeStr.split(':').map(Number);
         const suffix = h >= 12 ? 'PM' : 'AM';
-        h = h % 12 || 12; // Converts 0 to 12 and 13 to 1
-        return `${h}:${m.toString().padStart(2, '0')} ${suffix}`;
+        h = h % 12 || 12;
+        // We wrap the suffix in a span so we can style it separately
+        return `${h}:${m.toString().padStart(2, '0')}<span class="time-suffix">${suffix}</span>`;
     }
 
     function tick() {
