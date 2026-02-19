@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Prayer Dashboard</title>
+    <title>Leicester Prayer Live</title>
     <style>
         :root {
             --primary: #10b981;
@@ -12,149 +12,79 @@
             --card-bg: #ffffff;
             --text-main: #0f172a;
             --text-sub: #64748b;
-            --header-height: 110px; /* Calculated height of the sticky header */
         }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg);
-            color: var(--text-main);
-            margin: 0;
-            padding: 15px;
-            padding-bottom: 80px;
-        }
-
+        body { font-family: -apple-system, system-ui, sans-serif; background: var(--bg); margin: 0; padding: 10px; padding-bottom: 100px; }
         .container { max-width: 600px; margin: 0 auto; }
 
-        /* HEADER */
+        /* FIXED HEADER */
         header {
-            background: var(--card-bg);
-            padding: 15px;
-            border-radius: 16px;
+            background: var(--card-bg); padding: 15px; border-radius: 16px;
             box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            text-align: center;
-            position: sticky;
-            top: 5px; /* Added gap from top */
-            z-index: 2000; /* Ensure it is above EVERYTHING */
+            text-align: center; position: sticky; top: 10px; z-index: 3000; margin-bottom: 20px;
         }
-        .prayer-nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 5px;
-        }
+        .prayer-nav { display: flex; align-items: center; justify-content: space-between; }
+        .nav-btn { background: #f1f5f9; border: none; font-size: 1.2rem; cursor: pointer; padding: 10px 18px; border-radius: 12px; }
+        .current-prayer-title { font-size: 1.5rem; font-weight: 900; color: var(--primary); text-transform: uppercase; }
+        .sub-info { font-family: monospace; font-size: 1rem; color: var(--text-sub); font-weight: bold; margin-top: 4px; }
 
-        .nav-btn {
-            background: #f1f5f9; border: none; font-size: 1.2rem; cursor: pointer;
-            color: var(--text-sub); padding: 8px 18px; border-radius: 10px;
-            transition: all 0.2s;
+        /* EXPAND BUTTON */
+        .expand-btn {
+            width: 100%; padding: 12px; background: transparent; border: 2px dashed var(--text-sub);
+            color: var(--text-sub); border-radius: 12px; margin-bottom: 15px; cursor: pointer;
+            font-weight: 600; font-size: 0.9rem; transition: 0.2s;
         }
-        .nav-btn:hover { background: var(--primary); color: white; }
+        .expand-btn:hover { background: #e2e8f0; }
 
-        .current-prayer-title {
-            font-size: 1.4rem; font-weight: 800; text-transform: uppercase;
-            color: var(--primary); letter-spacing: 1px;
-        }
-
-        .sub-info { 
-            font-size: 0.95rem; 
-            color: var(--text-sub); 
-            font-family: monospace;
-            font-weight: 600;
-        }
-
-        /* LIST VIEW & STICKY TIME BADGE */
-        .time-group { margin-bottom: 25px; }
-        
-        .time-header {
-            display: flex; 
-            align-items: center; 
-            margin-bottom: 10px;
-            position: sticky; 
-            top: 110px; /* This needs to be exactly the height of your header */
-            z-index: 1000; 
-        }
-        
+        /* LIST & STICKY TIME BADGES */
+        .time-group { margin-bottom: 20px; }
+        .time-header { position: sticky; top: 105px; z-index: 2000; display: flex; margin-bottom: 10px; }
         .time-badge {
-            background: var(--text-main); color: white;
-            padding: 6px 14px; border-radius: 20px;
-            font-weight: bold; font-size: 0.9rem;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            background: #1e293b; color: white; padding: 6px 14px; border-radius: 20px;
+            font-weight: bold; font-size: 0.85rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
-        #tableView td {
-            background: white !important; /* Forces removal of any highlights */
-            color: var(--text-main) !important;
-            font-weight: normal !important;
-        }
-        
+        /* CARDS */
         .card {
-            background: var(--card-bg);
-            padding: 14px 16px;
-            border-radius: 12px;
-            margin-bottom: 8px;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-            display: flex; justify-content: space-between; align-items: center;
+            background: var(--card-bg); padding: 14px 16px; border-radius: 12px;
+            margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: opacity 0.3s;
         }
-
-        .mosque-name { font-weight: 500; }
-        .mosque-time { font-family: monospace; font-weight: 700; color: var(--primary); font-size: 1.1rem; }
-
-        .card.passed { background-color: #fee2e2; opacity: 0.85; }
-        .card.passed .mosque-name, .card.passed .mosque-time {
-            color: var(--danger); text-decoration: line-through;
-        }
+        .card.passed { background: #fee2e2; border: 1px solid #fecaca; }
+        .card.passed .mosque-name, .card.passed .mosque-time { color: var(--danger); text-decoration: line-through; }
+        .mosque-name { font-weight: 600; }
+        .mosque-time { font-family: monospace; font-weight: 800; color: var(--primary); font-size: 1.1rem; }
 
         /* TABLE VIEW */
-        .table-wrapper { 
-            overflow-x: auto; background: white; 
-            border-radius: 12px; padding: 10px; 
-            display: none;
-        }
+        .table-wrapper { display: none; background: white; border-radius: 15px; overflow-x: auto; padding: 10px; }
         table { width: 100%; border-collapse: collapse; min-width: 500px; }
-        th, td { padding: 12px 8px; text-align: left; border-bottom: 1px solid #eee; font-size: 0.85rem; }
-        th { color: var(--text-sub); background: #f8fafc; }
-        
-        /* Highlight removed for table view as requested */
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #f1f5f9; font-size: 0.85rem; }
 
         .view-toggle {
-            position: fixed; bottom: 20px; left: 50%;
-            transform: translateX(-50%);
-            background: var(--text-main); color: white;
-            padding: 12px 24px; border-radius: 30px;
-            font-weight: 600; cursor: pointer; border: none;
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3);
-            z-index: 2000;
+            position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+            background: var(--text-main); color: white; padding: 14px 28px;
+            border-radius: 40px; font-weight: bold; cursor: pointer; border: none;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); z-index: 4000;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <header id="mainHeader">
+    <header>
         <div class="prayer-nav">
             <button class="nav-btn" onclick="changePrayer(-1)">&#10094;</button>
-            <div class="current-prayer-title" id="prayerTitle">ASR</div>
+            <div id="prayerTitle" class="current-prayer-title">LOADING...</div>
             <button class="nav-btn" onclick="changePrayer(1)">&#10095;</button>
         </div>
-        <div class="sub-info" id="statusTime">00:00:00</div>
+        <div id="statusTime" class="sub-info">00:00:00</div>
     </header>
 
     <div id="listView"></div>
 
     <div id="tableView" class="table-wrapper">
         <table>
-            <thead>
-                <tr>
-                    <th>Masjid</th>
-                    <th>Fajr</th>
-                    <th>Zohar</th>
-                    <th>Asr</th>
-                    <th>Maghrib</th>
-                    <th>Eisha</th>
-                </tr>
-            </thead>
+            <thead><tr><th>Masjid</th><th>Fajr</th><th>Dhuhr</th><th>Asr</th><th>Maghrib</th><th>Isha</th></tr></thead>
             <tbody id="tableBody"></tbody>
         </table>
     </div>
@@ -163,107 +93,142 @@
 </div>
 
 <script>
-    const GITHUB_USERNAME = 'smanjra'; // Update this!
+    const GITHUB_USERNAME = 'smanjra'; // Change this!
     const REPO_NAME = 'smanjra';
-    
     const PRAYERS = ['fajr', 'zohar', 'asr', 'maghrib', 'eisha'];
-    let currentPrayerIndex = 2;
+    
+    let currentPrayerIndex = 0; // The prayer the user is viewing
+    let autoDetectedIndex = 0; // The prayer that is actually next
     let allData = [];
     let isListView = true;
+    let showPast = false;
 
     async function init() {
-        autoDetectPrayer();
         await loadData();
+        updateAutoDetect();
+        currentPrayerIndex = autoDetectedIndex;
         render();
-        // Update seconds every second
-        setInterval(updateClock, 1000);
-        // Full refresh every minute
-        setInterval(render, 60000); 
+        setInterval(tick, 1000);
     }
 
-    function updateClock() {
-        const now = new Date();
-        document.getElementById('statusTime').innerText = now.toLocaleTimeString();
-    }
-
-    function autoDetectPrayer() {
-        const hour = new Date().getHours();
-        if (hour < 7) currentPrayerIndex = 0;
-        else if (hour < 13) currentPrayerIndex = 1;
-        else if (hour < 16) currentPrayerIndex = 2;
-        else if (hour < 19) currentPrayerIndex = 3;
-        else currentPrayerIndex = 4;
-    }
-
-    async function loadData() {
-        try {
-            const url = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${REPO_NAME}/main/prayer_times.json`;
-            const res = await fetch(url);
-            allData = await res.json();
-            allData.sort((a, b) => a.name.localeCompare(b.name));
-        } catch (e) { console.error(e); }
-    }
-
-    function getMinutes(t) {
-        if (!t || !t.includes(':')) return 9999;
-        const [h, m] = t.split(':').map(Number);
-        return h * 60 + m;
-    }
-
-    function render() {
-        const prayerName = PRAYERS[currentPrayerIndex];
-        document.getElementById('prayerTitle').innerText = prayerName;
-        updateClock();
-
-        if (isListView) {
-            renderList(prayerName);
+    function tick() {
+        document.getElementById('statusTime').innerText = new Date().toLocaleTimeString('en-GB');
+        const oldAuto = autoDetectedIndex;
+        updateAutoDetect();
+        if(oldAuto !== autoDetectedIndex) {
+            currentPrayerIndex = autoDetectedIndex; // Auto-switch tab if 20 mins passed
+            render();
         } else {
-            renderTable();
+            // Re-render list every minute to update red/strikethrough/hiding
+            if(new Date().getSeconds() === 0) render();
         }
     }
 
-    function renderList(prayerName) {
+    async function loadData() {
+        const url = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${REPO_NAME}/main/prayer_times.json`;
+        try {
+            const res = await fetch(url);
+            allData = await res.json();
+            allData.sort((a,b) => a.name.localeCompare(b.name));
+        } catch(e) { console.error("Data error"); }
+    }
+
+    function getMins(s) {
+        if(!s || !s.includes(':')) return 9999;
+        const [h, m] = s.split(':').map(Number);
+        return h * 60 + m;
+    }
+
+    function updateAutoDetect() {
+        const nowMins = new Date().getHours() * 60 + new Date().getMinutes();
+        
+        for (let i = 0; i < PRAYERS.length; i++) {
+            const times = allData.map(m => getMins(m[PRAYERS[i]])).filter(t => t < 1440);
+            const latestJamaat = Math.max(...times);
+            
+            // If the latest jamaat for this prayer was more than 20 mins ago, move to next prayer
+            if (nowMins < (latestJamaat + 20)) {
+                autoDetectedIndex = i;
+                return;
+            }
+        }
+        autoDetectedIndex = 0; // Default back to Fajr if Eisha + 20 is gone
+    }
+
+    function render() {
+        const pName = PRAYERS[currentPrayerIndex];
+        document.getElementById('prayerTitle').innerText = pName === 'zohar' ? 'Dhuhr' : pName;
+        if (isListView) renderList(pName);
+        else renderTable();
+    }
+
+    function renderList(pName) {
         const container = document.getElementById('listView');
         container.style.display = 'block';
         document.getElementById('tableView').style.display = 'none';
         container.innerHTML = '';
 
         const nowMins = new Date().getHours() * 60 + new Date().getMinutes();
+        
+        // Prepare data
         const list = allData.map(m => ({
-            name: m.name,
-            timeStr: m[prayerName],
-            minutes: getMinutes(m[prayerName])
-        })).filter(m => m.minutes < 1440).sort((a, b) => a.minutes - b.minutes);
+            name: m.name, timeStr: m[pName], mins: getMins(m[pName])
+        })).sort((a,b) => a.mins - b.mins);
 
-        const grouped = {};
-        list.forEach(i => {
-            if(!grouped[i.timeStr]) grouped[i.timeStr] = [];
-            grouped[i.timeStr].push(i);
+        const pastList = list.filter(m => m.mins < (nowMins - 20));
+        const activeList = list.filter(m => m.mins >= (nowMins - 20));
+
+        // Expand Button for Past Jamaats
+        if (pastList.length > 0) {
+            const btn = document.createElement('button');
+            btn.className = 'expand-btn';
+            btn.innerText = showPast ? `↑ Hide ${pastList.length} passed jamaats` : `↓ Show ${pastList.length} passed jamaats`;
+            btn.onclick = () => { showPast = !showPast; render(); };
+            container.appendChild(btn);
+
+            if (showPast) {
+                renderGrouped(pastList, container, nowMins);
+                const hr = document.createElement('hr');
+                hr.style.cssText = "border: none; border-top: 1px solid #e2e8f0; margin: 20px 0;";
+                container.appendChild(hr);
+            }
+        }
+
+        renderGrouped(activeList, container, nowMins);
+    }
+
+    function renderGrouped(dataList, container, nowMins) {
+        const groups = {};
+        dataList.forEach(i => {
+            if(!groups[i.timeStr]) groups[i.timeStr] = [];
+            groups[i.timeStr].push(i);
         });
 
-        Object.keys(grouped).forEach(time => {
-            const groupDiv = document.createElement('div');
-            groupDiv.className = 'time-group';
-            groupDiv.innerHTML = `<div class="time-header"><span class="time-badge">${time}</span></div>`;
-
-            grouped[time].forEach(m => {
-                const isPassed = m.minutes < nowMins;
+        Object.keys(groups).forEach(time => {
+            const section = document.createElement('div');
+            section.className = 'time-group';
+            section.innerHTML = `<div class="time-header"><span class="time-badge">${time}</span></div>`;
+            
+            groups[time].forEach(m => {
                 const card = document.createElement('div');
-                card.className = `card ${isPassed ? 'passed' : ''}`;
+                // Only strike through if we are on the AUTO DETECTED prayer tab
+                const isCurrentTab = currentPrayerIndex === autoDetectedIndex;
+                const isDone = m.mins < nowMins;
+                
+                card.className = `card ${ (isCurrentTab && isDone) ? 'passed' : '' }`;
                 card.innerHTML = `<span class="mosque-name">${m.name}</span><span class="mosque-time">${m.timeStr}</span>`;
-                groupDiv.appendChild(card);
+                section.appendChild(card);
             });
-            container.appendChild(groupDiv);
+            container.appendChild(section);
         });
     }
 
     function renderTable() {
-        const container = document.getElementById('tableView');
-        const tbody = document.getElementById('tableBody');
-        container.style.display = 'block';
         document.getElementById('listView').style.display = 'none';
+        const wrapper = document.getElementById('tableView');
+        wrapper.style.display = 'block';
+        const tbody = document.getElementById('tableBody');
         tbody.innerHTML = '';
-
         allData.forEach(m => {
             const tr = document.createElement('tr');
             tr.innerHTML = `<td><b>${m.name}</b></td><td>${m.fajr}</td><td>${m.zohar}</td><td>${m.asr}</td><td>${m.maghrib}</td><td>${m.eisha}</td>`;
@@ -273,6 +238,7 @@
 
     function changePrayer(n) {
         currentPrayerIndex = (currentPrayerIndex + n + 5) % 5;
+        showPast = false; // Reset expand on tab change
         render();
     }
 
