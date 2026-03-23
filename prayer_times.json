@@ -4,39 +4,103 @@
     "fajr": "05:30",
     "zohar": "13:15",
     "asr": "16:50",
-    "maghrib": "18:24",
+    "maghrib": "18:26",
     "eisha": "20:15"
   },
   {
-    "name": "City Retreat Leicester",
-    "fajr": "05:00",
+    "name": "Al Furqan Centre",
+    "fajr": "04:45",
     "zohar": "12:45",
     "asr": "16:00",
-    "maghrib": "18:24",
+    "maghrib": "18:26",
+    "eisha": "20:15"
+  },
+  {
+    "name": "As-Salaam (The Peace Centre)",
+    "fajr": "05:15",
+    "zohar": "12:30",
+    "asr": "17:15",
+    "maghrib": "18:26",
+    "eisha": "20:20"
+  },
+  {
+    "name": "City Retreat Leicester",
+    "fajr": "04:45",
+    "zohar": "12:45",
+    "asr": "16:00",
+    "maghrib": "18:26",
+    "eisha": "20:30"
+  },
+  {
+    "name": "Coleman Lodge Prayer Room",
+    "fajr": "05:00",
+    "zohar": "12:40",
+    "asr": "17:30",
+    "maghrib": "18:26",
+    "eisha": "20:15"
+  },
+  {
+    "name": "Darul Arqam Education Centre",
+    "fajr": "05:30",
+    "zohar": "13:00",
+    "asr": "17:15",
+    "maghrib": "18:23",
+    "eisha": "20:15"
+  },
+  {
+    "name": "Darul Ihsaan (The Mayflower)",
+    "fajr": "05:45",
+    "zohar": "13:00",
+    "asr": "17:30",
+    "maghrib": "18:26",
     "eisha": "20:30"
   },
   {
     "name": "Khadijatul Kubra Mosque",
     "fajr": "05:00",
     "zohar": "12:30",
-    "asr": "16:30",
-    "maghrib": "18:24",
-    "eisha": "20:00"
-  },
-  {
-    "name": "Madani Education Centre",
-    "fajr": "05:40",
-    "zohar": "13:30",
-    "asr": "17:00",
-    "maghrib": "18:24",
+    "asr": "16:45",
+    "maghrib": "18:26",
     "eisha": "20:15"
   },
   {
+    "name": "Madani Education Centre",
+    "fajr": "05:20",
+    "zohar": "13:30",
+    "asr": "17:15",
+    "maghrib": "18:26",
+    "eisha": "20:30"
+  },
+  {
+    "name": "Majlis e Dawatul Haq",
+    "fajr": "05:30",
+    "zohar": "13:00",
+    "asr": "16:50",
+    "maghrib": "18:26",
+    "eisha": "20:20"
+  },
+  {
+    "name": "Markaz Attawheed",
+    "fajr": "04:45",
+    "zohar": "12:30",
+    "asr": "15:40",
+    "maghrib": "18:26",
+    "eisha": "19:47"
+  },
+  {
     "name": "Markaz Quba",
-    "fajr": "04:50",
+    "fajr": "04:47",
     "zohar": "12:45",
     "asr": "16:00",
-    "maghrib": "18:29",
+    "maghrib": "18:31",
+    "eisha": "20:15"
+  },
+  {
+    "name": "Mostyn Street Musalla",
+    "fajr": "05:40",
+    "zohar": "12:45",
+    "asr": "17:20",
+    "maghrib": "18:26",
     "eisha": "20:15"
   },
   {
@@ -44,7 +108,7 @@
     "fajr": "05:30",
     "zohar": "13:00",
     "asr": "17:15",
-    "maghrib": "18:24",
-    "eisha": "20:15"
+    "maghrib": "18:26",
+    "eisha": "20:30"
   }
 ]
