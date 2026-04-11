@@ -2,9 +2,9 @@
   {
     "name": "Al Ehsaan Academy",
     "fajr": "05:45",
-    "zohar": "13:30",
+    "zohar": "13:40",
     "asr": "19:15",
-    "maghrib": "19:58",
+    "maghrib": "19:59",
     "eisha": "21:40"
   },
   {
@@ -12,15 +12,15 @@
     "fajr": "05:00",
     "zohar": "13:30",
     "asr": "17:30",
-    "maghrib": "19:58",
-    "eisha": "21:45"
+    "maghrib": "19:59",
+    "eisha": "21:48"
   },
   {
     "name": "Al Ma\u2019rifah Academy",
     "fajr": "05:45",
     "zohar": "13:30",
     "asr": "18:30",
-    "maghrib": "19:58",
+    "maghrib": "19:59",
     "eisha": "21:40"
   },
   {
@@ -28,39 +28,39 @@
     "fajr": "05:45",
     "zohar": "13:30",
     "asr": "18:50",
-    "maghrib": "19:58",
+    "maghrib": "19:59",
     "eisha": "21:40"
   },
   {
     "name": "Baytul Ihsaan (Darul Fath)",
     "fajr": "05:30",
-    "zohar": "13:45",
+    "zohar": "13:30",
     "asr": "18:30",
-    "maghrib": "19:59",
+    "maghrib": "20:01",
     "eisha": "21:30"
   },
   {
     "name": "Beaumont Leys Muslims",
-    "fajr": "05:01",
+    "fajr": "04:59",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "20:03",
+    "maghrib": "20:05",
     "eisha": "21:15"
   },
   {
     "name": "Central Mosque",
-    "fajr": "05:45",
+    "fajr": "05:30",
     "zohar": "13:30",
-    "asr": "18:45",
-    "maghrib": "19:58",
-    "eisha": "21:45"
+    "asr": "19:00",
+    "maghrib": "20:00",
+    "eisha": "22:00"
   },
   {
     "name": "City Retreat Leicester",
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "17:15",
-    "maghrib": "19:58",
+    "maghrib": "19:59",
     "eisha": "21:30"
   },
   {
@@ -68,7 +68,7 @@
     "fajr": "05:30",
     "zohar": "13:30",
     "asr": "18:45",
-    "maghrib": "19:58",
+    "maghrib": "19:59",
     "eisha": "21:40"
   },
   {
@@ -76,7 +76,7 @@
     "fajr": "05:45",
     "zohar": "13:30",
     "asr": "18:45",
-    "maghrib": "19:55",
+    "maghrib": "19:57",
     "eisha": "21:50"
   },
   {
@@ -84,55 +84,55 @@
     "fajr": "05:55",
     "zohar": "13:30",
     "asr": "18:30",
-    "maghrib": "19:58",
+    "maghrib": "19:59",
     "eisha": "21:40"
   },
   {
     "name": "Faizan-E-Madina",
-    "fajr": "06:00",
+    "fajr": "05:45",
     "zohar": "13:30",
     "asr": "19:00",
-    "maghrib": "19:57",
-    "eisha": "22:15"
+    "maghrib": "19:59",
+    "eisha": "22:30"
   },
   {
     "name": "Faiz-E-Raza Academy",
-    "fajr": "05:45",
+    "fajr": "05:30",
     "zohar": "13:30",
-    "asr": "18:45",
-    "maghrib": "19:57",
-    "eisha": "22:00"
+    "asr": "19:10",
+    "maghrib": "19:58",
+    "eisha": "22:15"
   },
   {
     "name": "Gulzar-E-Madina",
-    "fajr": "05:50",
+    "fajr": "05:40",
     "zohar": "13:30",
-    "asr": "18:45",
-    "maghrib": "19:58",
-    "eisha": "21:40"
+    "asr": "19:00",
+    "maghrib": "20:00",
+    "eisha": "21:50"
   },
   {
     "name": "Hajra Mosque",
-    "fajr": "05:15",
+    "fajr": "05:00",
     "zohar": "13:30",
     "asr": "17:15",
-    "maghrib": "19:58",
-    "eisha": "21:21"
+    "maghrib": "19:59",
+    "eisha": "21:23"
   },
   {
     "name": "Islamic Da'wah Academy (IDA)",
     "fajr": "05:40",
-    "zohar": "13:25",
+    "zohar": "13:55",
     "asr": "18:45",
-    "maghrib": "19:58",
+    "maghrib": "19:59",
     "eisha": "22:10"
   },
   {
     "name": "Jamia Sufiya",
-    "fajr": "05:45",
+    "fajr": "05:30",
     "zohar": "13:30",
     "asr": "18:15",
-    "maghrib": "19:58",
+    "maghrib": "19:59",
     "eisha": "21:45"
   },
   {
@@ -140,39 +140,39 @@
     "fajr": "05:45",
     "zohar": "13:30",
     "asr": "17:50",
-    "maghrib": "19:58",
+    "maghrib": "19:59",
     "eisha": "21:30"
   },
   {
     "name": "Leicester Mosque (Sutherland St)",
-    "fajr": "05:45",
+    "fajr": "05:30",
     "zohar": "13:30",
-    "asr": "18:45",
-    "maghrib": "19:58",
-    "eisha": "21:45"
+    "asr": "19:00",
+    "maghrib": "20:00",
+    "eisha": "22:00"
   },
   {
     "name": "Madani Education Centre",
     "fajr": "05:45",
     "zohar": "13:30",
     "asr": "19:00",
-    "maghrib": "19:58",
+    "maghrib": "19:59",
     "eisha": "21:40"
   },
   {
     "name": "Madrasah Hamidiya (HCO)",
     "fajr": "05:40",
-    "zohar": "13:25",
+    "zohar": "13:35",
     "asr": "19:10",
-    "maghrib": "19:58",
+    "maghrib": "19:59",
     "eisha": "21:45"
   },
   {
     "name": "Madrasah Ta'leemul Qur'an (Knighton CEC)",
-    "fajr": "05:45",
+    "fajr": "05:30",
     "zohar": "13:30",
     "asr": "18:45",
-    "maghrib": "19:58",
+    "maghrib": "19:59",
     "eisha": "21:45"
   },
   {
@@ -180,7 +180,7 @@
     "fajr": "05:45",
     "zohar": "13:30",
     "asr": "18:30",
-    "maghrib": "19:58",
+    "maghrib": "19:59",
     "eisha": "21:40"
   },
   {
@@ -188,23 +188,23 @@
     "fajr": "04:45",
     "zohar": "13:30",
     "asr": "17:00",
-    "maghrib": "19:58",
-    "eisha": "21:19"
+    "maghrib": "19:59",
+    "eisha": "21:21"
   },
   {
     "name": "Masjid Aisha",
     "fajr": "05:45",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "19:58",
-    "eisha": "21:33"
+    "maghrib": "19:59",
+    "eisha": "21:34"
   },
   {
     "name": "Mostyn Street Musalla",
     "fajr": "05:45",
     "zohar": "13:45",
     "asr": "19:00",
-    "maghrib": "19:58",
+    "maghrib": "19:59",
     "eisha": "21:40"
   },
   {
@@ -212,47 +212,47 @@
     "fajr": "06:00",
     "zohar": "13:30",
     "asr": "18:30",
-    "maghrib": "19:58",
+    "maghrib": "19:59",
     "eisha": "21:45"
   },
   {
     "name": "Raza Centre",
-    "fajr": "05:45",
+    "fajr": "05:30",
     "zohar": "13:30",
     "asr": "19:00",
-    "maghrib": "19:57",
-    "eisha": "22:20"
+    "maghrib": "19:59",
+    "eisha": "22:40"
   },
   {
     "name": "Sayyidah Zahra Centre",
     "fajr": "05:30",
     "zohar": "13:30",
     "asr": "19:00",
-    "maghrib": "19:58",
+    "maghrib": "20:00",
     "eisha": "21:45"
   },
   {
     "name": "Tajdaar-E-Madina",
-    "fajr": "05:45",
+    "fajr": "05:30",
     "zohar": "13:30",
     "asr": "18:15",
-    "maghrib": "19:58",
+    "maghrib": "19:59",
     "eisha": "21:45"
   },
   {
     "name": "The Hamilton Hub (Darul Fath)",
     "fajr": "05:45",
-    "zohar": "13:30",
+    "zohar": "13:45",
     "asr": "18:45",
-    "maghrib": "19:59",
+    "maghrib": "20:01",
     "eisha": "21:40"
   },
   {
     "name": "Usmani Mosque",
-    "fajr": "05:45",
+    "fajr": "05:30",
     "zohar": "13:30",
-    "asr": "18:45",
-    "maghrib": "19:57",
-    "eisha": "22:00"
+    "asr": "19:00",
+    "maghrib": "19:58",
+    "eisha": "22:15"
   }
 ]
