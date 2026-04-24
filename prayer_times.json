@@ -1,26 +1,26 @@
 [
   {
     "name": "Al Ehsaan Academy",
-    "fajr": "05:30",
-    "zohar": "13:40",
-    "asr": "19:30",
-    "maghrib": "20:21",
-    "eisha": "21:45"
+    "fajr": "05:15",
+    "zohar": "13:30",
+    "asr": "19:40",
+    "maghrib": "20:22",
+    "eisha": "21:50"
   },
   {
     "name": "Al Furqan Centre",
-    "fajr": "04:45",
+    "fajr": "04:30",
     "zohar": "13:30",
     "asr": "17:30",
-    "maghrib": "20:20",
-    "eisha": "22:18"
+    "maghrib": "20:22",
+    "eisha": "22:20"
   },
   {
     "name": "Al Ma\u2019rifah Academy",
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "19:10",
-    "maghrib": "20:21",
+    "maghrib": "20:22",
     "eisha": "21:55"
   },
   {
@@ -28,23 +28,23 @@
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "19:15",
-    "maghrib": "20:21",
+    "maghrib": "20:22",
     "eisha": "22:00"
   },
   {
     "name": "Baytul Ihsaan (Darul Fath)",
     "fajr": "05:00",
-    "zohar": "13:30",
+    "zohar": "13:45",
     "asr": "18:30",
-    "maghrib": "20:22",
+    "maghrib": "20:23",
     "eisha": "21:50"
   },
   {
     "name": "Beaumont Leys Muslims",
-    "fajr": "04:29",
+    "fajr": "04:26",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "20:26",
+    "maghrib": "20:28",
     "eisha": "21:45"
   },
   {
@@ -52,7 +52,7 @@
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "19:15",
-    "maghrib": "20:21",
+    "maghrib": "20:22",
     "eisha": "22:00"
   },
   {
@@ -60,7 +60,7 @@
     "fajr": "04:45",
     "zohar": "13:30",
     "asr": "17:30",
-    "maghrib": "20:20",
+    "maghrib": "20:22",
     "eisha": "22:00"
   },
   {
@@ -68,23 +68,23 @@
     "fajr": "05:00",
     "zohar": "13:30",
     "asr": "19:15",
-    "maghrib": "20:21",
+    "maghrib": "20:22",
     "eisha": "21:50"
   },
   {
     "name": "Darul Arqam Education Centre",
-    "fajr": "05:30",
+    "fajr": "05:15",
     "zohar": "13:30",
     "asr": "19:10",
-    "maghrib": "20:18",
-    "eisha": "21:50"
+    "maghrib": "20:19",
+    "eisha": "22:00"
   },
   {
     "name": "Darul Ihsaan (The Mayflower)",
     "fajr": "05:25",
     "zohar": "13:30",
     "asr": "19:00",
-    "maghrib": "20:21",
+    "maghrib": "20:22",
     "eisha": "22:00"
   },
   {
@@ -92,7 +92,7 @@
     "fajr": "05:30",
     "zohar": "13:30",
     "asr": "19:15",
-    "maghrib": "20:20",
+    "maghrib": "20:22",
     "eisha": "22:45"
   },
   {
@@ -100,7 +100,7 @@
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "19:10",
-    "maghrib": "20:20",
+    "maghrib": "20:21",
     "eisha": "22:30"
   },
   {
@@ -108,7 +108,7 @@
     "fajr": "05:20",
     "zohar": "13:30",
     "asr": "19:00",
-    "maghrib": "20:21",
+    "maghrib": "20:22",
     "eisha": "22:00"
   },
   {
@@ -116,15 +116,15 @@
     "fajr": "04:45",
     "zohar": "13:30",
     "asr": "17:15",
-    "maghrib": "20:20",
-    "eisha": "21:45"
+    "maghrib": "20:22",
+    "eisha": "21:47"
   },
   {
     "name": "Islamic Da'wah Academy (IDA)",
-    "fajr": "05:25",
-    "zohar": "13:55",
-    "asr": "19:00",
-    "maghrib": "20:21",
+    "fajr": "05:10",
+    "zohar": "13:25",
+    "asr": "19:10",
+    "maghrib": "20:22",
     "eisha": "22:15"
   },
   {
@@ -132,7 +132,7 @@
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "18:45",
-    "maghrib": "20:21",
+    "maghrib": "20:22",
     "eisha": "21:50"
   },
   {
@@ -140,7 +140,7 @@
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "18:10",
-    "maghrib": "20:21",
+    "maghrib": "20:22",
     "eisha": "21:45"
   },
   {
@@ -148,7 +148,7 @@
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "19:15",
-    "maghrib": "20:21",
+    "maghrib": "20:22",
     "eisha": "22:00"
   },
   {
@@ -156,23 +156,23 @@
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "19:00",
-    "maghrib": "20:21",
+    "maghrib": "20:22",
     "eisha": "22:00"
   },
   {
     "name": "Madrasah Hamidiya (HCO)",
-    "fajr": "05:25",
-    "zohar": "13:35",
+    "fajr": "05:10",
+    "zohar": "13:25",
     "asr": "19:10",
-    "maghrib": "20:21",
-    "eisha": "21:55"
+    "maghrib": "20:22",
+    "eisha": "22:00"
   },
   {
     "name": "Madrasah Ta'leemul Qur'an (Knighton CEC)",
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "19:15",
-    "maghrib": "20:21",
+    "maghrib": "20:22",
     "eisha": "22:00"
   },
   {
@@ -180,7 +180,7 @@
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "19:15",
-    "maghrib": "20:21",
+    "maghrib": "20:22",
     "eisha": "21:50"
   },
   {
@@ -188,23 +188,23 @@
     "fajr": "04:15",
     "zohar": "13:30",
     "asr": "17:10",
-    "maghrib": "20:20",
-    "eisha": "21:43"
+    "maghrib": "20:22",
+    "eisha": "21:45"
   },
   {
     "name": "Masjid Aisha",
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "18:20",
-    "maghrib": "20:21",
-    "eisha": "21:46"
+    "maghrib": "20:22",
+    "eisha": "21:48"
   },
   {
     "name": "Mostyn Street Musalla",
     "fajr": "05:15",
     "zohar": "13:45",
     "asr": "19:20",
-    "maghrib": "20:21",
+    "maghrib": "20:22",
     "eisha": "21:55"
   },
   {
@@ -212,7 +212,7 @@
     "fajr": "05:30",
     "zohar": "13:30",
     "asr": "18:30",
-    "maghrib": "20:21",
+    "maghrib": "20:22",
     "eisha": "21:55"
   },
   {
@@ -220,7 +220,7 @@
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "19:30",
-    "maghrib": "20:20",
+    "maghrib": "20:22",
     "eisha": "23:00"
   },
   {
@@ -228,7 +228,7 @@
     "fajr": "05:00",
     "zohar": "13:30",
     "asr": "19:30",
-    "maghrib": "20:21",
+    "maghrib": "20:22",
     "eisha": "22:00"
   },
   {
@@ -236,15 +236,15 @@
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "18:45",
-    "maghrib": "20:21",
+    "maghrib": "20:22",
     "eisha": "21:50"
   },
   {
     "name": "The Hamilton Hub (Darul Fath)",
     "fajr": "05:15",
-    "zohar": "13:45",
+    "zohar": "13:30",
     "asr": "18:45",
-    "maghrib": "20:22",
+    "maghrib": "20:23",
     "eisha": "22:00"
   },
   {
@@ -252,7 +252,7 @@
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "19:15",
-    "maghrib": "20:20",
+    "maghrib": "20:21",
     "eisha": "22:30"
   }
 ]
