@@ -36,7 +36,7 @@
     "fajr": "03:45",
     "zohar": "13:30",
     "asr": "19:50",
-    "maghrib": "21:36",
+    "maghrib": "21:37",
     "eisha": "22:50"
   },
   {
@@ -44,7 +44,7 @@
     "fajr": "03:02",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "21:40",
+    "maghrib": "21:41",
     "eisha": "23:00"
   },
   {
@@ -73,7 +73,7 @@
   },
   {
     "name": "Darul Arqam Education Centre",
-    "fajr": "01:25",
+    "fajr": "04:20",
     "zohar": "13:30",
     "asr": "20:00",
     "maghrib": "21:32",
@@ -113,7 +113,7 @@
   },
   {
     "name": "Islamic Da'wah Academy (IDA)",
-    "fajr": "01:30",
+    "fajr": "04:15",
     "zohar": "13:55",
     "asr": "19:40",
     "maghrib": "21:35",
@@ -133,7 +133,7 @@
     "zohar": "13:30",
     "asr": "19:00",
     "maghrib": "21:35",
-    "eisha": "23:04"
+    "eisha": "23:03"
   },
   {
     "name": "Leicester Mosque (Sutherland St)",
@@ -155,7 +155,7 @@
     "name": "Madrasah Hamidiya (HCO)",
     "fajr": "04:15",
     "zohar": "13:35",
-    "asr": "20:40",
+    "asr": "19:45",
     "maghrib": "21:35",
     "eisha": "22:45"
   },
@@ -169,7 +169,7 @@
   },
   {
     "name": "Majlis e Dawatul Haq",
-    "fajr": "04:15",
+    "fajr": "04:20",
     "zohar": "13:30",
     "asr": "20:00",
     "maghrib": "21:35",
@@ -244,7 +244,7 @@
     "fajr": "04:00",
     "zohar": "13:45",
     "asr": "20:00",
-    "maghrib": "21:36",
+    "maghrib": "21:37",
     "eisha": "23:00"
   },
   {
