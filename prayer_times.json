@@ -41,10 +41,10 @@
   },
   {
     "name": "Beaumont Leys Muslims",
-    "fajr": "03:02",
+    "fajr": "03:03",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "21:41",
+    "maghrib": "21:40",
     "eisha": "23:00"
   },
   {
@@ -100,7 +100,7 @@
     "fajr": "04:00",
     "zohar": "13:30",
     "asr": "19:10",
-    "maghrib": "21:35",
+    "maghrib": "21:34",
     "eisha": "23:00"
   },
   {
@@ -133,7 +133,7 @@
     "zohar": "13:30",
     "asr": "19:00",
     "maghrib": "21:35",
-    "eisha": "23:02"
+    "eisha": "23:00"
   },
   {
     "name": "Leicester Mosque (Sutherland St)",
@@ -252,7 +252,7 @@
     "fajr": "04:15",
     "zohar": "13:30",
     "asr": "20:00",
-    "maghrib": "21:35",
+    "maghrib": "21:34",
     "eisha": "23:00"
   }
 ]
