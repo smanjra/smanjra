@@ -12,7 +12,7 @@
     "fajr": "03:30",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "21:35",
+    "maghrib": "21:34",
     "eisha": "23:15"
   },
   {
@@ -36,12 +36,12 @@
     "fajr": "03:45",
     "zohar": "13:30",
     "asr": "19:50",
-    "maghrib": "21:37",
+    "maghrib": "21:36",
     "eisha": "22:50"
   },
   {
     "name": "Beaumont Leys Muslims",
-    "fajr": "03:03",
+    "fajr": "03:04",
     "zohar": "13:30",
     "asr": "18:00",
     "maghrib": "21:40",
@@ -52,7 +52,7 @@
     "fajr": "04:15",
     "zohar": "13:30",
     "asr": "19:30",
-    "maghrib": "21:35",
+    "maghrib": "21:34",
     "eisha": "23:00"
   },
   {
@@ -60,7 +60,7 @@
     "fajr": "03:15",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "21:35",
+    "maghrib": "21:34",
     "eisha": "23:00"
   },
   {
@@ -108,7 +108,7 @@
     "fajr": "03:30",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "21:35",
+    "maghrib": "21:34",
     "eisha": "22:45"
   },
   {
@@ -132,15 +132,15 @@
     "fajr": "04:00",
     "zohar": "13:30",
     "asr": "19:00",
-    "maghrib": "21:35",
-    "eisha": "23:00"
+    "maghrib": "21:34",
+    "eisha": "22:58"
   },
   {
     "name": "Leicester Mosque (Sutherland St)",
     "fajr": "04:15",
     "zohar": "13:30",
     "asr": "19:30",
-    "maghrib": "21:35",
+    "maghrib": "21:34",
     "eisha": "23:00"
   },
   {
@@ -180,15 +180,15 @@
     "fajr": "02:50",
     "zohar": "13:30",
     "asr": "17:40",
-    "maghrib": "21:35",
-    "eisha": "22:35"
+    "maghrib": "21:34",
+    "eisha": "22:34"
   },
   {
     "name": "Markaz Quba",
     "fajr": "03:00",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "21:40",
+    "maghrib": "21:39",
     "eisha": "23:00"
   },
   {
@@ -228,7 +228,7 @@
     "fajr": "04:15",
     "zohar": "13:30",
     "asr": "19:30",
-    "maghrib": "21:35",
+    "maghrib": "21:34",
     "eisha": "23:00"
   },
   {
@@ -244,7 +244,7 @@
     "fajr": "04:00",
     "zohar": "13:45",
     "asr": "20:00",
-    "maghrib": "21:37",
+    "maghrib": "21:36",
     "eisha": "23:00"
   },
   {
