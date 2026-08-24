@@ -4,7 +4,7 @@
     "fajr": "05:40",
     "zohar": "13:40",
     "asr": "19:15",
-    "maghrib": "20:16",
+    "maghrib": "20:14",
     "eisha": "21:45"
   },
   {
@@ -12,39 +12,39 @@
     "fajr": "04:45",
     "zohar": "13:30",
     "asr": "17:30",
-    "maghrib": "20:15",
-    "eisha": "22:06"
+    "maghrib": "20:13",
+    "eisha": "22:03"
   },
   {
     "name": "Al Ma\u2019rifah Academy",
-    "fajr": "05:25",
+    "fajr": "05:35",
     "zohar": "13:30",
     "asr": "19:10",
-    "maghrib": "20:16",
-    "eisha": "22:00"
+    "maghrib": "20:14",
+    "eisha": "21:50"
   },
   {
     "name": "As-Salaam (The Peace Centre)",
-    "fajr": "05:20",
+    "fajr": "05:30",
     "zohar": "13:30",
-    "asr": "19:00",
-    "maghrib": "20:16",
-    "eisha": "21:55"
+    "asr": "18:45",
+    "maghrib": "20:14",
+    "eisha": "21:45"
   },
   {
     "name": "Baytul Ihsaan (Darul Fath)",
-    "fajr": "05:00",
+    "fajr": "05:15",
     "zohar": "13:30",
-    "asr": "19:00",
-    "maghrib": "20:18",
-    "eisha": "22:00"
+    "asr": "18:30",
+    "maghrib": "20:16",
+    "eisha": "21:45"
   },
   {
     "name": "Beaumont Leys Muslims",
-    "fajr": "04:36",
+    "fajr": "04:38",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "20:21",
+    "maghrib": "20:19",
     "eisha": "21:30"
   },
   {
@@ -52,23 +52,23 @@
     "fajr": "05:30",
     "zohar": "13:30",
     "asr": "19:00",
-    "maghrib": "20:15",
+    "maghrib": "20:13",
     "eisha": "22:00"
   },
   {
     "name": "Coleman Lodge Prayer Room",
-    "fajr": "05:15",
+    "fajr": "05:30",
     "zohar": "13:30",
-    "asr": "19:15",
-    "maghrib": "20:16",
-    "eisha": "21:50"
+    "asr": "19:00",
+    "maghrib": "20:14",
+    "eisha": "21:40"
   },
   {
     "name": "Darul Arqam Education Centre",
     "fajr": "05:30",
     "zohar": "13:30",
     "asr": "19:00",
-    "maghrib": "20:13",
+    "maghrib": "20:11",
     "eisha": "21:50"
   },
   {
@@ -76,7 +76,7 @@
     "fajr": "05:30",
     "zohar": "13:30",
     "asr": "19:30",
-    "maghrib": "20:17",
+    "maghrib": "20:14",
     "eisha": "22:45"
   },
   {
@@ -84,7 +84,7 @@
     "fajr": "05:30",
     "zohar": "13:30",
     "asr": "18:15",
-    "maghrib": "20:16",
+    "maghrib": "20:14",
     "eisha": "22:15"
   },
   {
@@ -92,15 +92,15 @@
     "fajr": "05:40",
     "zohar": "13:30",
     "asr": "18:45",
-    "maghrib": "20:15",
+    "maghrib": "20:13",
     "eisha": "19:50"
   },
   {
     "name": "Islamic Da'wah Academy (IDA)",
     "fajr": "05:30",
     "zohar": "13:55",
-    "asr": "19:15",
-    "maghrib": "20:16",
+    "asr": "18:50",
+    "maghrib": "20:14",
     "eisha": "22:00"
   },
   {
@@ -108,23 +108,23 @@
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "19:00",
-    "maghrib": "20:16",
+    "maghrib": "20:14",
     "eisha": "22:00"
   },
   {
     "name": "Khadijatul Kubra Mosque",
-    "fajr": "05:10",
+    "fajr": "05:20",
     "zohar": "13:30",
     "asr": "18:30",
-    "maghrib": "20:16",
-    "eisha": "21:36"
+    "maghrib": "20:14",
+    "eisha": "21:34"
   },
   {
     "name": "Leicester Mosque (Sutherland St)",
     "fajr": "05:30",
     "zohar": "13:30",
     "asr": "19:00",
-    "maghrib": "20:15",
+    "maghrib": "20:13",
     "eisha": "22:00"
   },
   {
@@ -132,23 +132,23 @@
     "fajr": "05:00",
     "zohar": "13:30",
     "asr": "17:30",
-    "maghrib": "20:22",
+    "maghrib": "20:20",
     "eisha": "22:30"
   },
   {
     "name": "Madani Education Centre",
-    "fajr": "05:25",
+    "fajr": "05:30",
     "zohar": "13:30",
     "asr": "19:00",
-    "maghrib": "20:16",
-    "eisha": "22:00"
+    "maghrib": "20:14",
+    "eisha": "21:50"
   },
   {
     "name": "Madrasah Hamidiya (HCO)",
     "fajr": "05:30",
     "zohar": "13:35",
     "asr": "19:15",
-    "maghrib": "20:16",
+    "maghrib": "20:14",
     "eisha": "21:50"
   },
   {
@@ -156,63 +156,63 @@
     "fajr": "05:30",
     "zohar": "13:30",
     "asr": "18:50",
-    "maghrib": "20:16",
+    "maghrib": "20:14",
     "eisha": "22:00"
   },
   {
     "name": "Majlis e Dawatul Haq",
-    "fajr": "05:15",
+    "fajr": "05:30",
     "zohar": "13:30",
-    "asr": "19:15",
-    "maghrib": "20:16",
-    "eisha": "22:00"
+    "asr": "18:15",
+    "maghrib": "20:14",
+    "eisha": "21:45"
   },
   {
     "name": "Markaz Attawheed",
     "fajr": "04:30",
     "zohar": "13:30",
     "asr": "17:10",
-    "maghrib": "20:15",
-    "eisha": "21:37"
+    "maghrib": "20:13",
+    "eisha": "21:36"
   },
   {
     "name": "Markaz Quba",
     "fajr": "04:45",
     "zohar": "13:30",
     "asr": "17:15",
-    "maghrib": "20:20",
+    "maghrib": "20:18",
     "eisha": "21:45"
   },
   {
     "name": "Masjid Aisha",
-    "fajr": "05:20",
+    "fajr": "05:30",
     "zohar": "13:30",
-    "asr": "18:20",
-    "maghrib": "20:16",
-    "eisha": "21:44"
+    "asr": "18:10",
+    "maghrib": "20:14",
+    "eisha": "21:43"
   },
   {
     "name": "Mostyn Street Musalla",
-    "fajr": "05:25",
+    "fajr": "05:35",
     "zohar": "13:45",
     "asr": "19:10",
-    "maghrib": "20:16",
-    "eisha": "21:55"
+    "maghrib": "20:14",
+    "eisha": "21:45"
   },
   {
     "name": "Northfields Education Centre",
-    "fajr": "05:30",
+    "fajr": "05:45",
     "zohar": "13:30",
-    "asr": "19:15",
-    "maghrib": "20:16",
-    "eisha": "22:00"
+    "asr": "18:30",
+    "maghrib": "20:14",
+    "eisha": "21:45"
   },
   {
     "name": "Raza Centre",
     "fajr": "05:10",
     "zohar": "13:30",
     "asr": "19:30",
-    "maghrib": "20:17",
+    "maghrib": "20:14",
     "eisha": "22:45"
   },
   {
@@ -220,7 +220,7 @@
     "fajr": "05:30",
     "zohar": "13:30",
     "asr": "19:15",
-    "maghrib": "20:15",
+    "maghrib": "20:13",
     "eisha": "22:15"
   },
   {
@@ -228,15 +228,15 @@
     "fajr": "05:15",
     "zohar": "13:30",
     "asr": "18:45",
-    "maghrib": "20:16",
+    "maghrib": "20:14",
     "eisha": "22:00"
   },
   {
     "name": "The Hamilton Hub (Darul Fath)",
     "fajr": "05:15",
     "zohar": "13:45",
-    "asr": "19:15",
-    "maghrib": "20:18",
-    "eisha": "22:15"
+    "asr": "18:45",
+    "maghrib": "20:16",
+    "eisha": "22:00"
   }
 ]
