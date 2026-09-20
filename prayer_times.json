@@ -4,7 +4,7 @@
     "fajr": "06:25",
     "zohar": "13:40",
     "asr": "18:00",
-    "maghrib": "19:13",
+    "maghrib": "19:11",
     "eisha": "20:55"
   },
   {
@@ -12,15 +12,15 @@
     "fajr": "05:45",
     "zohar": "13:30",
     "asr": "16:45",
-    "maghrib": "19:12",
-    "eisha": "20:52"
+    "maghrib": "19:10",
+    "eisha": "20:50"
   },
   {
     "name": "Al Ma\u2019rifah Academy",
     "fajr": "06:10",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "19:13",
+    "maghrib": "19:11",
     "eisha": "21:10"
   },
   {
@@ -28,31 +28,31 @@
     "fajr": "06:10",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "19:13",
+    "maghrib": "19:11",
     "eisha": "21:10"
   },
   {
     "name": "Beaumont Leys Muslims",
-    "fajr": "05:45",
+    "fajr": "06:00",
     "zohar": "13:30",
-    "asr": "17:45",
-    "maghrib": "19:13",
-    "eisha": "21:15"
+    "asr": "17:30",
+    "maghrib": "19:10",
+    "eisha": "21:00"
   },
   {
     "name": "Central Mosque",
     "fajr": "06:15",
     "zohar": "13:30",
     "asr": "17:30",
-    "maghrib": "19:13",
+    "maghrib": "19:10",
     "eisha": "21:00"
   },
   {
     "name": "City Retreat Leicester",
-    "fajr": "05:30",
+    "fajr": "05:45",
     "zohar": "13:30",
     "asr": "16:45",
-    "maghrib": "19:12",
+    "maghrib": "19:10",
     "eisha": "21:00"
   },
   {
@@ -60,7 +60,7 @@
     "fajr": "06:00",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "19:13",
+    "maghrib": "19:11",
     "eisha": "21:00"
   },
   {
@@ -68,7 +68,7 @@
     "fajr": "06:15",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "19:10",
+    "maghrib": "19:08",
     "eisha": "21:00"
   },
   {
@@ -76,15 +76,15 @@
     "fajr": "06:20",
     "zohar": "13:30",
     "asr": "18:10",
-    "maghrib": "19:13",
+    "maghrib": "19:11",
     "eisha": "21:30"
   },
   {
     "name": "Islamic Da'wah Academy (IDA)",
     "fajr": "06:15",
-    "zohar": "13:55",
+    "zohar": "14:00",
     "asr": "17:25",
-    "maghrib": "19:13",
+    "maghrib": "19:11",
     "eisha": "21:00"
   },
   {
@@ -92,7 +92,7 @@
     "fajr": "06:00",
     "zohar": "13:30",
     "asr": "18:15",
-    "maghrib": "19:13",
+    "maghrib": "19:11",
     "eisha": "21:00"
   },
   {
@@ -100,15 +100,15 @@
     "fajr": "05:45",
     "zohar": "13:30",
     "asr": "17:30",
-    "maghrib": "19:13",
-    "eisha": "20:46"
+    "maghrib": "19:10",
+    "eisha": "20:44"
   },
   {
     "name": "Leicester Mosque (Sutherland St)",
     "fajr": "06:15",
     "zohar": "13:30",
     "asr": "17:30",
-    "maghrib": "19:13",
+    "maghrib": "19:10",
     "eisha": "21:00"
   },
   {
@@ -116,7 +116,7 @@
     "fajr": "06:15",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "19:13",
+    "maghrib": "19:11",
     "eisha": "21:15"
   },
   {
@@ -124,7 +124,7 @@
     "fajr": "06:20",
     "zohar": "13:35",
     "asr": "18:00",
-    "maghrib": "19:13",
+    "maghrib": "19:11",
     "eisha": "21:00"
   },
   {
@@ -132,7 +132,7 @@
     "fajr": "06:15",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "19:13",
+    "maghrib": "19:11",
     "eisha": "21:00"
   },
   {
@@ -140,7 +140,7 @@
     "fajr": "06:15",
     "zohar": "13:30",
     "asr": "18:15",
-    "maghrib": "19:13",
+    "maghrib": "19:11",
     "eisha": "21:15"
   },
   {
@@ -148,31 +148,31 @@
     "fajr": "05:20",
     "zohar": "13:30",
     "asr": "16:30",
-    "maghrib": "19:12",
-    "eisha": "20:32"
+    "maghrib": "19:10",
+    "eisha": "20:30"
   },
   {
     "name": "Markaz Quba",
-    "fajr": "05:30",
+    "fajr": "05:45",
     "zohar": "13:30",
-    "asr": "16:45",
-    "maghrib": "19:17",
-    "eisha": "21:00"
+    "asr": "16:30",
+    "maghrib": "19:15",
+    "eisha": "20:45"
   },
   {
     "name": "Masjid Aisha",
     "fajr": "06:00",
     "zohar": "13:30",
     "asr": "17:30",
-    "maghrib": "19:13",
-    "eisha": "20:54"
+    "maghrib": "19:11",
+    "eisha": "20:50"
   },
   {
     "name": "Mostyn Street Musalla",
     "fajr": "06:10",
     "zohar": "13:45",
     "asr": "18:10",
-    "maghrib": "19:13",
+    "maghrib": "19:11",
     "eisha": "21:10"
   },
   {
@@ -180,7 +180,7 @@
     "fajr": "06:15",
     "zohar": "13:30",
     "asr": "17:30",
-    "maghrib": "19:13",
+    "maghrib": "19:11",
     "eisha": "21:15"
   },
   {
@@ -188,7 +188,7 @@
     "fajr": "06:15",
     "zohar": "13:30",
     "asr": "18:30",
-    "maghrib": "19:14",
+    "maghrib": "19:11",
     "eisha": "21:30"
   },
   {
@@ -196,7 +196,7 @@
     "fajr": "06:15",
     "zohar": "13:30",
     "asr": "18:30",
-    "maghrib": "19:13",
+    "maghrib": "19:10",
     "eisha": "21:15"
   },
   {
@@ -204,7 +204,7 @@
     "fajr": "06:00",
     "zohar": "13:30",
     "asr": "18:15",
-    "maghrib": "19:13",
+    "maghrib": "19:11",
     "eisha": "21:00"
   },
   {
@@ -212,7 +212,7 @@
     "fajr": "06:15",
     "zohar": "13:30",
     "asr": "18:00",
-    "maghrib": "19:13",
+    "maghrib": "19:11",
     "eisha": "21:30"
   }
 ]
